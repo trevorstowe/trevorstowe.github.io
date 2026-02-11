@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Measuring Units</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    header {
+      margin-bottom: 16px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 12px;
+    }
+
+    h1 { margin: 0; }
+    h2 { margin-top: 28px; }
+
+    .note {
+      background: #f5f5f5;
+      padding: 12px;
+      border-left: 4px solid #999;
+    }
+
+    pre {
+      background: #111;
+      color: #eee;
+      padding: 14px;
+      overflow-x: auto;
+      border-radius: 8px;
+    }
+
+    code { font-family: Consolas, monospace; }
+
+    .demo-box {
+      border: 2px solid #333;
+      padding: 16px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS Measuring Units</h1>
+    <p>Code Log 2: CSS Measuring Units (DTC 355)</p>
+  </header>
+
+  <h2>Absolute vs. Relative CSS Length Units</h2>
+  <p>
+    CSS length units fall into two big categories: <strong>absolute</strong> and
+    <strong>relative</strong>. Absolute units are fixed measurements (like inches or points),
+    meaning they don’t change based on screen size or the user’s settings. In theory, that sounds
+    consistent, but on modern screens it can be misleading because different devices have different
+    pixel densities. Absolute units are usually better for print-style layouts.
+  </p>
+  <p>
+    Relative units are based on something else, like the font size of the element, the root font size,
+    or the viewport size (the visible area of the browser window). Relative units are often more flexible
+    and accessible because they adapt to different screens and user preferences (like zoom or larger default text).
+  </p>
+
+  <h2>1) px and pt</h2>
+  <p>
+    <strong>px (pixels)</strong> is the most common unit you’ll see. In modern CSS, a “pixel” is usually a
+    <em>CSS pixel</em> (not always a literal hardware pixel), so it stays visually consistent across devices.
+    px is great for small, precise adjustments (borders, shadows, tiny spacing), but it’s not always ideal for
+    typography if you want text to scale nicely for accessibility.
+  </p>
+  <p>
+    <strong>pt (points)</strong> is traditionally a print unit (1pt = 1/72 of an inch). It can work on screens,
+    but it’s mainly meant for print styling. Using pt for web layout is kind of like using a ruler to measure
+    Wi-Fi speed: possible, but weird.
+  </p>
+
+  <pre><code>/* px vs pt example */
+.box {
+  border: 2px solid #333;     /* px works well for borders */
+  padding: 16px;              /* predictable spacing */
+}
+
+.printy-text {
+  font-size: 12pt;            /* more "print" oriented */
+}</code></pre>
+
+  <h2>2) em and rem</h2>
+  <p>
+    <strong>em</strong> is relative to the <strong>font size of the element</strong> (or its parent, depending on what you’re sizing).
+    If an element has a font size of 20px, then 1em = 20px for that element. The tricky part is em can “compound” when nested,
+    because child elements inherit and multiply off the parent’s size.
+  </p>
+  <p>
+    <strong>rem</strong> stands for “root em” and is relative to the <strong>root element</strong> font size (usually the <code>&lt;html&gt;</code> tag).
+    rem is often easier for consistent sizing across a site because it doesn’t compound the same way em does.
+  </p>
+
+  <pre><code>/* em vs rem example */
+html {
+  font-size: 16px;  /* root size */
+}
+
+.card {
+  font-size: 20px;
+  padding: 1em;     /* 1em = 20px inside .card */
+}
+
+h2 {
+  font-size: 2rem;  /* 2rem = 32px everywhere (if html is 16px) */
+}</code></pre>
+
+  <div class="note">
+    <strong>Quick rule:</strong> rem = consistent site-wide scaling, em = scaling that follows the current element.
+  </div>
+
+  <h2>3) vw and vh</h2>
+  <p>
+    <strong>vw</strong> means “viewport width” and <strong>vh</strong> means “viewport height.”  
+    1vw = 1% of the browser window’s width, and 1vh = 1% of the browser window’s height.
+    These are useful for layouts that need to scale with the screen, like full-screen sections or responsive text.
+  </p>
+  <p>
+    One warning: viewport units can behave a little weird on mobile browsers because the visible area changes when the address bar
+    shows/hides. Still, they’re super useful when you want elements sized directly to the screen.
+  </p>
+
+  <pre><code>/* vw/vh example */
+.hero {
+  height: 80vh;     /* takes 80% of the screen height */
+  padding: 4vw;     /* padding scales with screen width */
+}
+
+.big-title {
+  font-size: 6vw;   /* text scales with the window width */
+}</code></pre>
+
+  <div class="demo-box">
+    <p><strong>Mini demo idea:</strong> Resize your browser window and imagine how <code>vh</code> and <code>vw</code> would scale.</p>
+    <p>Viewport units are basically: “make it respond to the screen, not my feelings.”</p>
+  </div>
+
+  <h2>Wrap-up</h2>
+  <p>
+    Absolute units (like pt) try to stay fixed, while relative units (like em, rem, vw, vh) adapt to text settings and screen size.
+    For most modern web design, relative units are usually the safer choice because they scale better across devices and are more
+    user-friendly.
+  </p>
+</body>
+</html>
