@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TP3: Layout 2</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="secondLayout">
+  <main class="tableWrap">
+    <table class="layoutTable" aria-label="Six-column layout table">
+      <colgroup>
+        <col span="6" />
+      </colgroup>
+
+      <!-- Row 1: Title -->
+      <tr>
+        <td colspan="6" class="tTitle">
+          <h1>Designing as Visual Organization</h1>
+          <p class="meta">Anni Albers (from <em>On Weaving</em>, 1965)</p>
+        </td>
+      </tr>
+
+      <!-- Row 2: Left margin + text block -->
+      <tr>
+        <td colspan="1"></td>
+        <td colspan="4" class="tText">
+          <!-- PASTE CANVAS TEXT HERE, split into paragraphs -->
+          <p>PASTE CANVAS TEXT HERE (Paragraph 1).</p>
+        </td>
+        <td colspan="1"></td>
+      </tr>
+
+      <!-- Row 3: Callout pushed right -->
+      <tr>
+        <td colspan="2"></td>
+        <td colspan="4" class="tCallout">
+          <p class="callout"><em>PASTE ONE OF THE ITALIC CALLOUT LINES HERE.</em></p>
+        </td>
+      </tr>
+
+      <!-- Row 4: Main paragraph centered -->
+      <tr>
+        <td colspan="1"></td>
+        <td colspan="4" class="tText">
+          <p>PASTE CANVAS TEXT HERE (Paragraph 2).</p>
+          <p>PASTE CANVAS TEXT HERE (Paragraph 3).</p>
+        </td>
+        <td colspan="1"></td>
+      </tr>
+
+      <!-- Row 5: Another callout, centered -->
+      <tr>
+        <td colspan="1"></td>
+        <td colspan="4" class="tCallout">
+          <p class="callout"><em>PASTE ANOTHER ITALIC CALLOUT LINE HERE.</em></p>
+        </td>
+        <td colspan="1"></td>
+      </tr>
+
+      <!-- Row 6: About the Author -->
+      <tr>
+        <td colspan="1"></td>
+        <td colspan="4" class="tAbout">
+          <h2>About the Author</h2>
+
+          <p>
+            Anni Albers (1899–1994) was a German-born textile artist and educator who helped push weaving into the modern art world.
+            She studied at the Bauhaus and became known for treating textiles like design: structure, materials, and visual logic, not just decoration. :contentReference[oaicite:3]{index=3}
+          </p>
+
+          <p>
+            After leaving Germany in 1933, she worked and taught in the United States, including at Black Mountain College.
+            Her book <em>On Weaving</em> (1965) is basically the “serious design brain” version of weaving, and it’s still cited constantly for how it connects craft, industry, and modern design thinking. :contentReference[oaicite:4]{index=4}
+          </p>
+        </td>
+        <td colspan="1"></td>
+      </tr>
+
+      <!-- Row 7: Footer -->
+      <tr>
+        <td colspan="6" class="tFooter">
+          <p>TP3 Layout 2 uses a 6-column HTML table with colspans to create alignment and spacing.</p>
+        </td>
+      </tr>
+    </table>
+  </main>
+</body>
+</html>
