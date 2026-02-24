@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CSS Media Queries</title>
-<style>
-body {
-  font-family: Arial;
-  margin: 40px;
-  max-width: 800px;
-}
+  <title>CSS Media Queries</title>
 
-@media (max-width: 600px) {
-  body {
-    background-color: lightgray;
-  }
-}
-</style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    /* Media query example */
+    @media (max-width: 600px) {
+      body {
+        background-color: lightgray;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
 <h1>CSS Media Queries</h1>
 
-<p>A media query lets a website change its layout depending on screen size. This helps websites work better on phones, tablets, and computers.</p>
+<h2>How media queries work and why they are useful</h2>
 
-<p>They are useful because different devices have different screen sizes, and media queries make the site responsive.</p>
+<p>
+A CSS media query lets a website change its layout depending on the screen size or device. It checks conditions like screen width, and if the condition is true, it applies different styles.
+</p>
+
+<p>
+Media queries are useful because people view websites on phones, tablets, and computers. Without media queries, a website might look good on a laptop but bad on a phone. Media queries help make websites responsive so they adjust automatically.
+</p>
 
 <h2>Media Features</h2>
 
-<p><b>max-width:</b> applies styles when screen is smaller than a certain width.</p>
+<p>
+<b>max-width:</b> This applies styles when the screen is smaller than a certain width. This is commonly used for phones so layouts fit better.
+</p>
 
-<p><b>min-width:</b> applies styles when screen is larger than a certain width.</p>
+<p>
+<b>min-width:</b> This applies styles when the screen is larger than a certain width. This is useful for laptops and desktops where there is more space.
+</p>
 
-<p><b>orientation:</b> detects portrait or landscape screen.</p>
+<p>
+<b>orientation:</b> This detects whether the screen is portrait (tall) or landscape (wide). This helps adjust layouts depending on how the device is held.
+</p>
 
-<p><b>max-height:</b> applies styles when screen height is smaller than a certain size.</p>
+<p>
+<b>max-height:</b> This applies styles when the screen height is smaller than a certain size. This helps content fit better on shorter screens.
+</p>
 
- <h2>Code Example</h2>
+<h2>Code Example</h2>
 
 <pre>
 @media (max-width: 600px) {
@@ -45,6 +63,9 @@ body {
 }
 </pre>
 
-<p>This code changes the background color when the screen is 600px or smaller.</p> 
+<p>
+This example changes the background color when the screen width is 600px or smaller.
+</p>
+
 </body>
 </html>
