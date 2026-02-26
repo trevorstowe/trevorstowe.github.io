@@ -46,7 +46,6 @@ body {
   margin-top: 20px;
 }
 
-/* desktop change */
 @media (min-width: 768px) {
   .wrap {
     max-width: 900px;
