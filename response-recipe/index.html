@@ -1,74 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classic Chocolate Chip Cookies</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f3ee;
+  color: #2f2f2f;
+  line-height: 1.6;
+}
 
-  <header class="site-header">
-    <h1>Classic Chocolate Chip Cookies</h1>
-    <p class="subtitle">A soft, classic homemade dessert recipe</p>
-  </header>
+.site-header {
+  background: #6b3e26;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
 
-  <main class="recipe-layout">
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
 
-    <section class="hero-image">
-      <img src="Photo.jpg" alt="Chocolate chip cookies">
-    </section>
+.subtitle {
+  margin-top: 8px;
+  font-size: 1rem;
+}
 
-    <section class="intro-card">
-      <h2>About This Recipe</h2>
-      <p>
-        Chocolate chip cookies are one of my favorite desserts because they are easy
-        to make and always taste good. I picked this recipe because the cookies come
-        out soft in the middle and a little crispy on the edges.
-      </p>
-    </section>
+.recipe-layout {
+  padding: 18px;
+}
 
-    <section class="ingredients-card">
-      <h2>Ingredients</h2>
-      <ul>
-        <li>1 cup butter (softened)</li>
-        <li>3/4 cup white sugar</li>
-        <li>3/4 cup brown sugar (packed)</li>
-        <li>2 large eggs</li>
-        <li>2 teaspoons vanilla extract</li>
-        <li>2 1/4 cups all-purpose flour</li>
-        <li>1 teaspoon baking soda</li>
-        <li>1/2 teaspoon salt</li>
-        <li>2 cups chocolate chips</li>
-        <li>Optional: 1 cup chopped walnuts or pecans</li>
-      </ul>
-    </section>
+.hero-image img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
 
-    <section class="directions-card">
-      <h2>Directions</h2>
-      <ol>
-        <li>Preheat the oven to 375°F.</li>
-        <li>In a bowl, mix the flour, baking soda, and salt together.</li>
-        <li>In a larger bowl, beat the butter with both sugars until creamy.</li>
-        <li>Add the eggs and vanilla and mix until combined.</li>
-        <li>Slowly mix the dry ingredients into the wet mixture.</li>
-        <li>Stir in the chocolate chips and optional nuts.</li>
-        <li>Drop spoonfuls of dough onto an ungreased cookie sheet.</li>
-        <li>Bake for 9 to 11 minutes, until the edges are lightly golden.</li>
-      </ol>
-    </section>
+.intro-card,
+.ingredients-card,
+.directions-card {
+  background: white;
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-  </main>
+.intro-card h2,
+.ingredients-card h2,
+.directions-card h2 {
+  margin-top: 0;
+  color: #6b3e26;
+}
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Trevor Stowe</p>
-    <p>
-      Recipe adapted from Ghirardelli:
-      <a href="https://www.ghirardelli.com/recipes/classic-chocolate-chip-cookies-rec1016" target="_blank">
-        Classic Chocolate Chip Cookies
-      </a>
-    </p>
-  </footer>
+.ingredients-card ul,
+.directions-card ol {
+  padding-left: 22px;
+  margin-bottom: 0;
+}
 
-</body>
-</html>
+.site-footer {
+  text-align: center;
+  background: #e5ddd4;
+  padding: 18px;
+  margin-top: 24px;
+  font-size: 0.95rem;
+}
+
+.site-footer p {
+  margin: 6px 0;
+}
+
+.site-footer a {
+  color: #6b3e26;
+}
+
+@media (min-width: 768px) {
+  .recipe-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 22px;
+    align-items: start;
+  }
+
+  .hero-image {
+    grid-column: 1 / 2;
+  }
+
+  .intro-card {
+    grid-column: 2 / 3;
+    margin-top: 0;
+  }
+
+  .ingredients-card {
+    grid-column: 1 / 2;
+    margin-top: 0;
+  }
+
+  .directions-card {
+    grid-column: 2 / 3;
+    margin-top: 0;
+  }
+
+  .site-header h1 {
+    font-size: 2.5rem;
+  }
+}
