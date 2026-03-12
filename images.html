@@ -1,0 +1,100 @@
+images.html
+3. Copy and paste this whole code into images.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      color: #222;
+    }
+
+    pre {
+      background: #f4f4f4;
+      padding: 12px;
+      overflow-x: auto;
+    }
+
+    .example-box {
+      background-image: url("example.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Images</h1>
+
+  <p>
+    Images are used a lot in web design because they help add meaning, show information, and make pages more interesting. In web development, images can be added directly in HTML or used in CSS as background images.
+  </p>
+
+  <h2>Using an img Tag vs background-image</h2>
+
+  <p>
+    The img tag is used when the image is part of the actual content of the page. For example, if you are showing a photo, logo, or picture that matters to the meaning of the page, you would usually use HTML like this:
+  </p>
+
+  <pre>&lt;img src="baseball.jpg" alt="Baseball field"&gt;</pre>
+
+  <p>
+    A background image is usually more for design and layout. Instead of being placed directly in the content, it is added with CSS to an element like a div, section, or header. The code looks like this:
+  </p>
+
+  <pre>background-image: url("example.jpg");</pre>
+
+  <p>
+    One difference in code is that the img tag goes in the HTML, while background-image is written in CSS. A bigger difference in function is that an img element is actual page content and can include alt text for accessibility, while a background image is mostly decorative. Background images are also easier to control with layout features like positioning, repeating, and covering the full area of a box.
+  </p>
+
+  <div class="example-box">Example Background Image</div>
+
+  <h2>Other CSS Properties for Background Images</h2>
+
+  <p>
+    Besides background-image, other CSS properties can change how a background image looks. One is background-size, which controls how big the image appears. For example, cover makes the image fill the whole box. Another is background-repeat, which decides whether the image repeats across the space or only shows once. A third useful property is background-position, which controls where the image is placed inside the element, such as centered or aligned to the top.
+  </p>
+
+  <h2>Dimensions vs Resolution</h2>
+
+  <p>
+    Dimensions are the width and height of a bitmap image in pixels, while resolution is the amount of detail the image contains within those pixels.
+  </p>
+
+  <h2>Image File Formats</h2>
+
+  <p>
+    GIF, PNG, JPG/JPEG, WebP, and SVG are all common image formats, but they work differently. GIF supports simple animation but has limited color quality. PNG is good for graphics and images that need transparency. JPG or JPEG is usually best for photos because it keeps file sizes smaller, even though it loses a little image quality. WebP is a newer format that often gives good quality with even smaller file sizes than JPG or PNG. SVG is different because it is a vector format, which means it can scale up or down without getting blurry.
+  </p>
+
+  <p>
+    Some formats are better for certain uses. JPG is usually the best choice for photographs. PNG is better for logos, graphics, and anything needing transparency. GIF is useful for short animations. WebP is great for websites because it keeps images smaller while still looking good. SVG is best for icons, logos, and simple illustrations that need to stay sharp at any size.
+  </p>
+
+</body>
+</html>
