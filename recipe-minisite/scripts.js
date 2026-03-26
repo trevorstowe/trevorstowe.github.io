@@ -1,18 +1,6 @@
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-const submenuToggles = document.querySelectorAll(".submenu-toggle");
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("nav-menu");
 
-if (menuToggle) {
-  menuToggle.addEventListener("click", function () {
-    navMenu.classList.toggle("active");
-  });
-}
-
-submenuToggles.forEach(function (toggle) {
-  toggle.addEventListener("click", function () {
-    if (window.innerWidth < 768) {
-      const submenu = this.nextElementSibling;
-      submenu.classList.toggle("active");
-    }
-  });
+toggle.addEventListener("click", function () {
+menu.classList.toggle("active");
 });
