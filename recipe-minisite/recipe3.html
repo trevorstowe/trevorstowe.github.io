@@ -1,76 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grilled Cheese</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grilled Cheese</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <nav class="site-nav">
-    <div class="nav-top">
-      <a href="index.html" class="logo">Trevor's Recipes</a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
-        Menu
-      </button>
-    </div>
+<nav class="site-nav">
+<div class="nav-top">
+<a href="index.html" class="logo">Trevor's Recipes</a>
+<button id="menu-toggle">Menu</button>
+</div>
 
-    <ul class="nav-menu" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
+<ul id="nav-menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="recipe1.html">Cookies</a></li>
+<li><a href="recipe2.html">Pancakes</a></li>
+<li><a href="recipe3.html">Grilled Cheese</a></li>
+</ul>
+</nav>
 
-      <li class="has-submenu">
-        <button class="submenu-toggle">My Recipes</button>
-        <ul class="submenu">
-          <li><a href="recipe1.html">Chocolate Chip Cookies</a></li>
-          <li><a href="recipe2.html">Pancakes</a></li>
-          <li><a href="recipe3.html">Grilled Cheese</a></li>
-        </ul>
-      </li>
+<header class="site-header">
+<h1>Grilled Cheese</h1>
+<p class="subtitle">Simple but always hits</p>
+</header>
 
-      <li class="has-submenu">
-        <button class="submenu-toggle">Favorite Recipe Sites</button>
-        <ul class="submenu">
-          <li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a></li>
-          <li><a href="https://www.foodnetwork.com/" target="_blank">Food Network</a></li>
-          <li><a href="https://sallysbakingaddiction.com/" target="_blank">Sally's Baking Addiction</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+<main class="recipe-layout">
 
-  <main class="recipe-page">
-    <section class="recipe-hero">
-      <h1>Grilled Cheese</h1>
-      <p>This is probably the most simple recipe here, but it is still one of the best. Crispy bread and melted cheese is not exactly a complicated formula, but it works.</p>
-    </section>
+<section class="hero-image">
+<img src="Photo.jpg" alt="Grilled cheese">
+</section>
 
-    <section class="recipe-layout">
-      <div class="recipe-box">
-        <h2>Ingredients</h2>
-        <ul>
-          <li>2 slices of bread</li>
-          <li>2 slices of cheese</li>
-          <li>1 tablespoon butter</li>
-        </ul>
-      </div>
+<section class="ingredients-card">
+<h2>Ingredients</h2>
+<ul>
+<li>Bread</li>
+<li>Cheese</li>
+<li>Butter</li>
+</ul>
+</section>
 
-      <div class="recipe-box">
-        <h2>Instructions</h2>
-        <ol>
-          <li>Butter one side of each slice of bread.</li>
-          <li>Put one slice of bread butter side down in a pan.</li>
-          <li>Add the cheese on top.</li>
-          <li>Place the second slice of bread on top with the butter side facing up.</li>
-          <li>Cook over medium to low heat until the bottom is golden brown.</li>
-          <li>Flip it carefully and cook the other side.</li>
-          <li>Take it off the pan once the bread is toasted and the cheese is melted.</li>
-          <li>Let it cool for a minute, then eat it before it gets sad.</li>
-        </ol>
-      </div>
-    </section>
-  </main>
+<section class="directions-card">
+<h2>Directions</h2>
+<ol>
+<li>Butter bread</li>
+<li>Add cheese</li>
+<li>Cook until golden</li>
+<li>Flip and finish</li>
+</ol>
+</section>
 
-  <script src="scripts.js"></script>
+</main>
+
+<script src="scripts.js"></script>
 </body>
 </html>
