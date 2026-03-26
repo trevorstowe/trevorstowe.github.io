@@ -1,80 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pancakes</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pancakes</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <nav class="site-nav">
-    <div class="nav-top">
-      <a href="index.html" class="logo">Trevor's Recipes</a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
-        Menu
-      </button>
-    </div>
+<nav class="site-nav">
+<div class="nav-top">
+<a href="index.html" class="logo">Trevor's Recipes</a>
+<button id="menu-toggle">Menu</button>
+</div>
 
-    <ul class="nav-menu" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
+<ul id="nav-menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="recipe1.html">Cookies</a></li>
+<li><a href="recipe2.html">Pancakes</a></li>
+<li><a href="recipe3.html">Grilled Cheese</a></li>
+</ul>
+</nav>
 
-      <li class="has-submenu">
-        <button class="submenu-toggle">My Recipes</button>
-        <ul class="submenu">
-          <li><a href="recipe1.html">Chocolate Chip Cookies</a></li>
-          <li><a href="recipe2.html">Pancakes</a></li>
-          <li><a href="recipe3.html">Grilled Cheese</a></li>
-        </ul>
-      </li>
+<header class="site-header">
+<h1>Pancakes</h1>
+<p class="subtitle">Easy breakfast that actually tastes good</p>
+</header>
 
-      <li class="has-submenu">
-        <button class="submenu-toggle">Favorite Recipe Sites</button>
-        <ul class="submenu">
-          <li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a></li>
-          <li><a href="https://www.foodnetwork.com/" target="_blank">Food Network</a></li>
-          <li><a href="https://sallysbakingaddiction.com/" target="_blank">Sally's Baking Addiction</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+<main class="recipe-layout">
 
-  <main class="recipe-page">
-    <section class="recipe-hero">
-      <h1>Pancakes</h1>
-      <p>Pancakes are one of the easiest breakfast foods to make, and they are worth it when you want something better than cereal but not too complicated.</p>
-    </section>
+<section class="hero-image">
+<img src="Photo.jpg" alt="Pancakes">
+</section>
 
-    <section class="recipe-layout">
-      <div class="recipe-box">
-        <h2>Ingredients</h2>
-        <ul>
-          <li>1 1/2 cups all purpose flour</li>
-          <li>3 1/2 teaspoons baking powder</li>
-          <li>1 tablespoon sugar</li>
-          <li>1/4 teaspoon salt</li>
-          <li>1 1/4 cups milk</li>
-          <li>1 egg</li>
-          <li>3 tablespoons melted butter</li>
-        </ul>
-      </div>
+<section class="ingredients-card">
+<h2>Ingredients</h2>
+<ul>
+<li>1 1/2 cups flour</li>
+<li>1 tbsp sugar</li>
+<li>1 egg</li>
+<li>1 1/4 cups milk</li>
+<li>3 tbsp butter</li>
+</ul>
+</section>
 
-      <div class="recipe-box">
-        <h2>Instructions</h2>
-        <ol>
-          <li>Mix the flour, baking powder, sugar, and salt in a bowl.</li>
-          <li>Add the milk, egg, and melted butter.</li>
-          <li>Stir everything until the batter is mostly smooth.</li>
-          <li>Heat a pan or griddle over medium heat.</li>
-          <li>Pour some batter onto the pan.</li>
-          <li>Cook until bubbles show up on top, then flip it.</li>
-          <li>Cook the other side until golden brown.</li>
-          <li>Serve with syrup, butter, or whatever else you want on them.</li>
-        </ol>
-      </div>
-    </section>
-  </main>
+<section class="directions-card">
+<h2>Directions</h2>
+<ol>
+<li>Mix ingredients</li>
+<li>Pour onto pan</li>
+<li>Flip when bubbles form</li>
+<li>Cook until golden</li>
+</ol>
+</section>
 
-  <script src="scripts.js"></script>
+</main>
+
+<script src="scripts.js"></script>
 </body>
 </html>
