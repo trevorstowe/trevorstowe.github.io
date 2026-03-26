@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trevor's Recipe Mini Site</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trevor's Recipe Site</title>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <nav class="site-nav">
-    <div class="nav-top">
-      <a href="index.html" class="logo">Trevor's Recipes</a>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation">
-        Menu
-      </button>
-    </div>
-<li><a href="recipe-minisite/index.html">Tiny Project 7: Recipe Mini Site</a></li>
-    <ul class="nav-menu" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
+<nav class="site-nav">
+<div class="nav-top">
+<a href="index.html" class="logo">Trevor's Recipes</a>
+<button id="menu-toggle">Menu</button>
+</div>
 
-      <li class="has-submenu">
-        <button class="submenu-toggle">My Recipes</button>
-        <ul class="submenu">
-          <li><a href="recipe1.html">Chocolate Chip Cookies</a></li>
-          <li><a href="recipe2.html">Pancakes</a></li>
-          <li><a href="recipe3.html">Grilled Cheese</a></li>
-        </ul>
-      </li>
+<ul id="nav-menu">
+<li><a href="index.html">Home</a></li>
 
-      <li class="has-submenu">
-        <button class="submenu-toggle">Favorite Recipe Sites</button>
-        <ul class="submenu">
-          <li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a></li>
-          <li><a href="https://www.foodnetwork.com/" target="_blank">Food Network</a></li>
-          <li><a href="https://sallysbakingaddiction.com/" target="_blank">Sally's Baking Addiction</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
+<li>
+<span>My Recipes</span>
+<ul>
+<li><a href="recipe1.html">Chocolate Chip Cookies</a></li>
+<li><a href="recipe2.html">Pancakes</a></li>
+<li><a href="recipe3.html">Grilled Cheese</a></li>
+</ul>
+</li>
 
-  <header class="hero">
-    <div class="hero-text">
-      <h1>My Recipe Mini Site</h1>
-      <p>I put this site together to show three recipes I actually like and would realistically make. I wanted it to be simple to use, easy to read, and work well on both a phone and a computer.</p>
-      <a href="recipe1.html" class="button-link">Check Out My First Recipe</a>
-    </div>
-  </header>
+<li>
+<span>Favorite Sites</span>
+<ul>
+<li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a></li>
+<li><a href="https://www.foodnetwork.com/" target="_blank">Food Network</a></li>
+<li><a href="https://sallysbakingaddiction.com/" target="_blank">Sally's Baking</a></li>
+</ul>
+</li>
 
-  <main class="home-content">
-    <section class="intro">
-      <h2>About This Site</h2>
-      <p>This mini site was made for Tiny Project 7. It has a home page, three recipe pages, and a navigation menu so it is easy to move around the site. I tried to keep the layout clean and make everything feel organized without overdoing it.</p>
-    </section>
+</ul>
+</nav>
 
-    <section class="recipe-cards">
-      <article class="card">
-        <h3>Chocolate Chip Cookies</h3>
-        <p>This one is a classic and probably the best dessert recipe on the site.</p>
-        <a href="recipe1.html">Go to recipe</a>
-      </article>
+<header class="site-header">
+<h1>My Recipe Mini Site</h1>
+<p class="subtitle">A few simple recipes that are actually worth making</p>
+</header>
 
-      <article class="card">
-        <h3>Pancakes</h3>
-        <p>A really easy breakfast recipe that does not take much effort.</p>
-        <a href="recipe2.html">Go to recipe</a>
-      </article>
+<main class="home-layout">
 
-      <article class="card">
-        <h3>Grilled Cheese</h3>
-        <p>Super simple, really good, and hard to mess up which is always nice.</p>
-        <a href="recipe3.html">Go to recipe</a>
-      </article>
-    </section>
-  </main>
+<section class="hero-image">
+<img src="Photo.jpg" alt="Chocolate chip cookies">
+</section>
 
-  <script src="scripts.js"></script>
+<section class="intro-card">
+<h2>About</h2>
+<p>
+I made this site to put together a few recipes I actually like. Nothing complicated, just stuff that is easy to make and turns out good. The goal was to keep it simple and make everything easy to navigate.
+</p>
+</section>
+
+<section class="card">
+<h3>Chocolate Chip Cookies</h3>
+<p>Probably the best thing on this site.</p>
+<a href="recipe1.html">View recipe</a>
+</section>
+
+<section class="card">
+<h3>Pancakes</h3>
+<p>Easy breakfast that does not take much effort.</p>
+<a href="recipe2.html">View recipe</a>
+</section>
+
+<section class="card">
+<h3>Grilled Cheese</h3>
+<p>Simple, fast, and hard to mess up.</p>
+<a href="recipe3.html">View recipe</a>
+</section>
+
+</main>
+
+<script src="scripts.js"></script>
 </body>
 </html>
