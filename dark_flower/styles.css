@@ -1,0 +1,43 @@
+body.darkMode {
+  background: #1b1b1b;
+  color: #f1f1f1;
+}
+
+body.darkMode .site-header {
+  background: #142d1b;
+  color: #f1f1f1;
+}
+
+body.darkMode #darkModeButton {
+  background: #f1f1f1;
+  color: #142d1b;
+}
+
+body.darkMode .card {
+  background: #2a2a2a;
+  color: #f1f1f1;
+}
+
+body.darkMode .card h2 {
+  color: #9fd8a8;
+}
+
+body.darkMode .site-footer {
+  background: #111;
+  color: #f1f1f1;
+}
+
+@media (min-width: 768px) {
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+  }
+
+  .card {
+    margin-top: 0;
+  }
+}
