@@ -1,35 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>DTC 355</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trevor Stowe Home Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<h1>Trevor Stowe</h1>
+<header class="hero">
+  <nav>
+    <h2>Trevor Stowe</h2>
 
-<p>Economics student learning web development.</p>
+    <ul>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#major-project">Major Project</a></li>
+    </ul>
+  </nav>
 
-<p>
-<a href="https://github.com/trevorstowe/trevorstowe.github.io">
-My GitHub repository
-</a>
-</p>
+  <div class="hero-content">
+    <h1>Trevor Stowe</h1>
 
-<h2>Activities</h2>
-<ul>
-<li>Activity 1</li>
-<li>Activity 2</li>
-<li>Activity 3</li>
-<li><a href="code-log-4/log6.html">Code Log 6: Reference Quest</a></li>
-</ul>
+    <p>Baseball player learning web design.</p>
 
-<h2>Tiny Projects</h2>
-<ul>
-<li>Tiny Project 1</li>
-<li><a href="favorite-recipe/">Tiny Project 2: Favorite Recipe</a></li>
-<li><a href="rhododendron/">Tiny Project 4: Pacific Rhododendron</a></li>
-</ul>
+    <a class="button" href="https://github.com/trevorstowe/trevorstowe.github.io">
+      View My GitHub Repository
+    </a>
+  </div>
+</header>
 
-<h2>Major Project</h2>
-<p>This project will focus on a recipe based website and is still in early development.</p>
+<main>
+
+<section id="activities" class="card">
+  <h2>Activities and Code Logs</h2>
+
+  <ul class="link-list">
+    <li><a href="code-log-1.html">Code Log 1</a></li>
+    <li><a href="css-measuring-units.html">CSS Measuring Units</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="media-queries.html">Media Queries</a></li>
+    <li><a href="code-log-4/log6.html">Code Log 6</a></li>
+  </ul>
+</section>
+
+<section id="projects" class="card">
+  <h2>Tiny Projects</h2>
+
+  <ul class="link-list">
+    <li><a href="favorite-recipe/index.html">Favorite Recipe</a></li>
+
+    <li><a href="rhododendron/index.html">
+      Pacific Rhododendron
+    </a></li>
+
+    <li><a href="response-recipe/index.html">
+      Responsive Recipe
+    </a></li>
+
+    <li><a href="recipe-minisite/index.html">
+      Recipe Mini Site
+    </a></li>
+
+    <li><a href="dark_flower/index.html">
+      Dark Flower
+    </a></li>
+  </ul>
+</section>
+
+<section id="major-project" class="card major">
+  <h2>Major Project</h2>
+
+  <p>
+    A scrolling story website about baseball, confidence,
+    and overcoming overthinking.
+  </p>
+
+  <a class="button" href="long-story/index.html">
+    View Major Project
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>DTC 355 , Washington State University</p>
+</footer>
+
+</body>
+</html>
