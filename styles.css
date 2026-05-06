@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f1ea;
+  color: #1f2933;
+  line-height: 1.6;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1f2933, #465a69);
+  color: white;
+  padding: 30px;
+  min-height: 65vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background: #d97706;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #b45309;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.link-list a {
+  display: block;
+  background: #eef2f5;
+  padding: 12px;
+  border-radius: 8px;
+  color: #1f2933;
+  text-decoration: none;
+}
+
+.link-list a:hover {
+  background: #dbe4ea;
+}
+
+.major {
+  border-left: 8px solid #d97706;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #1f2933;
+  color: white;
+}
+
+@media (max-width: 700px) {
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .link-list {
+    grid-template-columns: 1fr;
+  }
+}
