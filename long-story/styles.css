@@ -4,7 +4,11 @@ body {
   background-color: #111;
   color: white;
 }
-
+img {
+  width: 300px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
 .step {
   height: 100vh;
   padding: 40px;
